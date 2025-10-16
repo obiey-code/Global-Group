@@ -2363,6 +2363,60 @@
         <meta name="msapplication-TileImage" content="wp-content/uploads/2025/10/a_-_Copie-removebg-preview.png"/>
         <base target="_top">
         <style data-kubio-theme-style="true"></style>
+        <style>
+    /* Styles CSS de base pour un affichage propre. */
+    body { font-family: sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+    h1 { text-align: center; color: #333; }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+    input[type="text"], input[type="email"], textarea { 
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ddd; 
+        border-radius: 4px; 
+        box-sizing: border-box;
+    }
+    textarea { resize: vertical; }
+
+    button { 
+        background-color: #007bff; 
+        color: white; 
+        padding: 12px 20px; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+    button:hover:not(:disabled) { background-color: #0056b3; }
+    button:disabled { background-color: #cccccc; cursor: not-allowed; }
+    
+    /* Styles pour la barre de progression (masquée par défaut) */
+    #progress-bar { 
+        width: 100%; 
+        height: 20px; 
+        margin: 15px 0; 
+        display: none; /* 💡 L'attribut 'display: none' la cache initialement */
+        appearance: none;
+        -webkit-appearance: none;
+        border: 1px solid #007bff;
+        border-radius: 4px;
+    }
+    /* Personnalisation de l'apparence de la barre (Chrome/Firefox) */
+    #progress-bar::-webkit-progress-bar { background-color: #eee; border-radius: 4px; }
+    #progress-bar::-webkit-progress-value { background-color: #007bff; border-radius: 4px; }
+    #progress-bar::-moz-progress-bar { background-color: #007bff; border-radius: 4px; }
+    
+    /* Styles pour le statut du formulaire (messages de succès/erreur) */
+    #form-status { 
+        font-weight: bold; 
+        padding: 10px; 
+        border-radius: 4px; 
+        margin-top: 15px;
+        text-align: center;
+    }
+</style>
     </head>
     <body class="wp-singular page-template page-template-full-width page page-id-87 wp-custom-logo wp-theme-kubio">
         <div id="page-top" tabindex="-1"></div>
@@ -2670,71 +2724,59 @@
                                                         }
                                                     </style>
                                                     <div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-32">
-                                                        <form id="wpforms-form-32" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="32" method="post" enctype="multipart/form-data" action="/global_group/contact.html" data-token="4905cf3009effd62af29e28db50be570" data-token-time="1760618060">
-                                                            <noscript class="wpforms-error-noscript">Veuillez activer JavaScript dans votre navigateur pour remplir ce formulaire.</noscript>
-                                                            <div id="wpforms-error-noscript" style="display: none;">Veuillez activer JavaScript dans votre navigateur pour remplir ce formulaire.</div>
-                                                            <div class="wpforms-field-container">
-                                                                <div id="wpforms-32-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1">
-                                                                    <fieldset>
-                                                                        <legend class="wpforms-field-label">
-                                                                            Nom(s) et prénon(s) <span class="wpforms-required-label" aria-hidden="true">*</span>
-                                                                        </legend>
-                                                                        <div class="wpforms-field-row wpforms-field-medium">
-                                                                            <div class="wpforms-field-row-block wpforms-first wpforms-one-half">
-                                                                                <input type="text" id="wpforms-32-field_1" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][1][first]" aria-errormessage="wpforms-32-field_1-error" required>
-                                                                                <label for="wpforms-32-field_1" class="wpforms-field-sublabel after">Prénom</label>
-                                                                            </div>
-                                                                            <div class="wpforms-field-row-block wpforms-one-half">
-                                                                                <input type="text" id="wpforms-32-field_1-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][1][last]" aria-errormessage="wpforms-32-field_1-last-error" required>
-                                                                                <label for="wpforms-32-field_1-last" class="wpforms-field-sublabel after">Nom</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </fieldset>
-                                                                </div>
-                                                                <div id="wpforms-32-field_5-container" class="wpforms-field wpforms-field-text" data-field-type="text" data-field-id="5">
-                                                                    <label class="wpforms-field-label" for="wpforms-32-field_5">Message Email Objet</label>
-                                                                    <input type="text" id="wpforms-32-field_5" class="wpforms-field-medium" name="wpforms[fields][5]">
-                                                                </div>
-                                                                <div id="wpforms-32-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2">
-                                                                    <label class="wpforms-field-label" for="wpforms-32-field_2">
-                                                                        Email <span class="wpforms-required-label" aria-hidden="true">*</span>
-                                                                    </label>
-                                                                    <input type="email" id="wpforms-32-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" spellcheck="false" aria-errormessage="wpforms-32-field_2-error" required>
-                                                                </div>
-                                                                <div id="wpforms-32-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3">
-                                                                    <label class="wpforms-field-label" for="wpforms-32-field_3">
-                                                                        Objet <span class="wpforms-required-label" aria-hidden="true">*</span>
-                                                                    </label>
-                                                                    <input type="text" id="wpforms-32-field_3" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][3]" aria-errormessage="wpforms-32-field_3-error" required>
-                                                                </div>
-                                                                <div id="wpforms-32-field_4-container" class="wpforms-field wpforms-field-textarea" data-field-id="4">
-                                                                    <label class="wpforms-field-label" for="wpforms-32-field_4">
-                                                                        Message <span class="wpforms-required-label" aria-hidden="true">*</span>
-                                                                    </label>
-                                                                    <textarea id="wpforms-32-field_4" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][4]" aria-errormessage="wpforms-32-field_4-error" required></textarea>
-                                                                </div>
-                                                                <script>
-                                                                    (function() {
-                                                                        const style = document.createElement('style');
-                                                                        style.appendChild(document.createTextNode('#wpforms-32-field_5-container { position: absolute !important; overflow: hidden !important; display: inline !important; height: 1px !important; width: 1px !important; z-index: -1000 !important; padding: 0 !important; } #wpforms-32-field_5-container input { visibility: hidden; } #wpforms-conversational-form-page #wpforms-32-field_5-container label { counter-increment: none; }'));
-                                                                        document.head.appendChild(style);
-                                                                        document.currentScript?.remove();
-                                                                    }
-                                                                    )();
-                                                                </script>
-                                                            </div>
-                                                            <!-- .wpforms-field-container -->
-                                                            <div class="wpforms-submit-container">
-                                                                <input type="hidden" name="wpforms[id]" value="32">
-                                                                <input type="hidden" name="page_title" value="contact">
-                                                                <input type="hidden" name="page_url" value="contact.html">
-                                                                <input type="hidden" name="url_referer" value="">
-                                                                <input type="hidden" name="page_id" value="87">
-                                                                <input type="hidden" name="wpforms[post_id]" value="87">
-                                                                <button type="submit" name="wpforms[submit]" id="wpforms-submit-32" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button>
-                                                                <img decoding="async" src="wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Chargement en cours">
-                                                            </div>
-                                                        </form>
+                                                       
+
+<form id="contact-form" action="https://formspree.io/f/xldpzgzv" method="POST">
+    
+    <div class="form-group">
+        <label for="full_name">Nom(s) et Prénom(s)</label>
+        <input 
+            type="text" 
+            name="full_name" 
+            id="full_name" 
+            placeholder="Ex: Dupont Jean"
+            aria-describedby="name-help"
+            maxlength="100" 
+            pattern="[A-Za-zÀ-ÿ\s-']+" 
+            title="Seules les lettres, les espaces, les tirets et les apostrophes sont autorisés."
+            autocomplete="name"
+            required>
+        <small id="name-help" class="form-text text-muted">Veuillez entrer votre nom complet.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="email_address">Adresse Email</label>
+        <input 
+            type="email" 
+            name="email_address" 
+            id="email_address" 
+            placeholder="exemple@domaine.com"
+            maxlength="254" 
+            autocomplete="email" 
+            required>
+        </div>
+
+    <div class="form-group">
+        <label for="message_body">Message</label>
+        <textarea 
+            name="message_body" 
+            id="message_body" 
+            rows="5" 
+            placeholder="Écrivez votre message ici..."
+            maxlength="5000" 
+            required></textarea>
+        </div>
+    
+    <div class="form-group">
+        <input type="text" name="website_url" id="website_url" style="display:none;" tabindex="-1" autocomplete="off">
+    </div>
+
+    <progress id="progress-bar" value="0" max="100"></progress>
+    
+    <button type="submit" id="submit-button">Envoyer le message</button>
+    
+    <p id="form-status"></p>
+</form>
                                                     </div>
                                                     <!-- .wpforms-container -->
                                                 </div>
@@ -2988,6 +3030,83 @@
             }
             /* ]]> */
         </script>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sélection des éléments DOM par leur ID
+        const form = document.getElementById('contact-form');
+        const progressBar = document.getElementById('progress-bar');
+        const formStatus = document.getElementById('form-status');
+        const submitButton = document.getElementById('submit-button');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // 🛑 Empêche la soumission native (et la redirection)
+            
+            const url = form.action;
+            const data = new FormData(form);
+            
+            // --- 1. Préparation de l'interface utilisateur ---
+            progressBar.style.display = 'block'; // Affiche la barre
+            progressBar.value = 0; 
+            formStatus.textContent = 'Envoi en cours...';
+            formStatus.style.color = 'blue';
+            submitButton.disabled = true; // Désactive le bouton pour éviter les doubles clics
+
+            // --- 2. Configuration de la requête AJAX ---
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            
+            // 🔑 Demande une réponse JSON, essentielle pour Formspree pour éviter la redirection
+            xhr.setRequestHeader('Accept', 'application/json');
+
+            // 📊 Gère la progression de l'upload des données
+            xhr.upload.onprogress = function(event) {
+                if (event.lengthComputable) {
+                    const percentComplete = (event.loaded / event.total) * 100;
+                    progressBar.value = percentComplete;
+                }
+            };
+            
+            // --- 3. Gestion de la réponse ---
+            xhr.onload = function() {
+                progressBar.style.display = 'none'; // Cache la barre
+                submitButton.disabled = false; // Réactive le bouton
+                
+                if (xhr.status === 200) {
+                    // ✅ Succès
+                    formStatus.textContent = '✅ Merci ! Votre message a été envoyé avec succès.';
+                    formStatus.style.color = 'green';
+                    form.reset(); // Vider le formulaire
+                } else {
+                    // ❌ Erreur
+                    let message = "Erreur inconnue lors de l'envoi.";
+                    try {
+                        const errorData = JSON.parse(xhr.responseText);
+                        message = errorData.error || errorData.errors?.map(err => err.message).join('; ') || message;
+                        if (xhr.status === 422) {
+                            message = "Veuillez vérifier les champs manquants ou invalides.";
+                        }
+                    } catch (e) {
+                        message = `Une erreur est survenue lors de l'envoi. Code de statut : ${xhr.status}.`;
+                    }
+                    
+                    formStatus.textContent = `❌ Erreur: ${message}`;
+                    formStatus.style.color = 'red';
+                }
+            };
+
+            // ⚠️ Gestion des erreurs réseau
+            xhr.onerror = function() {
+                progressBar.style.display = 'none';
+                submitButton.disabled = false;
+                formStatus.textContent = '🚨 Erreur réseau. Veuillez vérifier votre connexion.';
+                formStatus.style.color = 'red';
+            };
+
+            // --- 4. Envoi de la requête ---
+            xhr.send(data);
+        });
+    });
+</script>
         <style>
             a.yydev-back-to-top {
                 background: #09547c url(wp-content/plugins/back-to-the-top-button/images/back-to-top.png) no-repeat;
