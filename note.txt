@@ -1,0 +1,35 @@
+supprime     http://localhost/global_group/
+
+?page_id=87       contact.html
+?page_id=84       secteurs.html
+?page_id=78       a_propos.html
+?page_id=10        blog.html
+
+href=""          href="index.html"
+
+
+####Les articles
+
+?p=122   article1.html  #Type Duplex à un niveau
+?p=116   article2.html  #type Duplex à deux niveau
+?p=110   article3.html  #Complexe scolaire
+?p=91    article4.html  #Type F4 moderne
+
+recherche et remplace                                              </p>
+supprime la balise div qui contient © 2025 Global Group 
+
+a la cinquieme balise div a partir de la derniere balise div du code ajoute :
+<p style="text-align: center;">
+         © 2025 Global Group | Développer par <a target="_blank" href="https://obiey-code.github.io/portefolio/" rel="noopener">OBIEY Christ Dany</a>
+</p>
+
+dans les articles recherche
+CATEGORIES:
+Tags:
+No responses yet
+Laisser un commentaire #supprime tout le formulaire
+
+et supprime sa div 
+
+
+
