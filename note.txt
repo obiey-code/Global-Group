@@ -1,4 +1,5 @@
-supprime     http://localhost/global_group/
+supprime       http://localhost/global_group/
+supprime       http://localhost/global_group
 
 ?page_id=87       contact.html
 ?page_id=84       secteurs.html
@@ -6,6 +7,9 @@ supprime     http://localhost/global_group/
 ?page_id=10        blog.html
 
 href=""          href="index.html"
+
+ &rsquo;       ===        '
+
 
 
 ####Les articles
