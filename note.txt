@@ -7,7 +7,7 @@ supprime       http://localhost/global_group
 ?page_id=10        blog.html
 
 href=""          href="index.html"
-
+>root            >GLOBAL GROUP
  &rsquo;       ===        '
 
 
