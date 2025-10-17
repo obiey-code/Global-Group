@@ -36,4 +36,16 @@ Laisser un commentaire #supprime tout le formulaire
 et supprime sa div 
 
 
+====
+negligeable
+supprime cu=i dessous tous 
+localhost        obiey-code.github.io
+http:            https:
+global_group    Global-Group
+
+===
+ligne correctes à implémenter au niveau du href
+<figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-single-rlYTEhTMib-container style-local-29-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article3.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
+
+
 
