@@ -6,13 +6,14 @@
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
         <!-- This site is optimized with the Yoast SEO plugin v26.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
         <title>Actualités - Global Group</title>
-        <link rel="canonical" href="blog.html"/>
-        <meta property="og:locale" content="fr_FR"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Actualités - Global Group"/>
-        <meta property="og:url" content="blog.html"/>
-        <meta property="og:site_name" content="Global Group"/>
-        <meta name="twitter:card" content="summary_large_image"/>
+        <!-- Avis aux administrateurs et administratrices : cette page n’affiche pas de méta description car elle n’en a pas. Vous pouvez donc soit l’ajouter spécifiquement pour cette page soit vous rendre dans vos réglages (Yoast SEO - Réglages) pour configurer un modèle. -->
+        <link rel="canonical" href="?page_id=10" class="yoast-seo-meta-tag"/>
+        <meta property="og:locale" content="fr_FR" class="yoast-seo-meta-tag"/>
+        <meta property="og:type" content="article" class="yoast-seo-meta-tag"/>
+        <meta property="og:title" content="Actualités - Global Group" class="yoast-seo-meta-tag"/>
+        <meta property="og:url" content="?page_id=10" class="yoast-seo-meta-tag"/>
+        <meta property="og:site_name" content="Global Group" class="yoast-seo-meta-tag"/>
+        <meta name="twitter:card" content="summary_large_image" class="yoast-seo-meta-tag"/>
         <script type="application/ld+json" class="yoast-schema-graph">
             {
                 "@context": "https://schema.org",
@@ -22,8 +23,8 @@
                             "WebPage",
                             "CollectionPage"
                         ],
-                        "@id": "blog.html",
-                        "url": "blog.html",
+                        "@id": "?page_id=10",
+                        "url": "?page_id=10",
                         "name": "Actualités - Global Group",
                         "isPartOf": {
                             "@id": "#website"
@@ -31,13 +32,13 @@
                         "datePublished": "2025-10-15T20:59:58+00:00",
                         "dateModified": "2025-10-16T10:27:51+00:00",
                         "breadcrumb": {
-                            "@id": "blog.html#breadcrumb"
+                            "@id": "?page_id=10#breadcrumb"
                         },
                         "inLanguage": "fr-FR"
                     },
                     {
                         "@type": "BreadcrumbList",
-                        "@id": "blog.html#breadcrumb",
+                        "@id": "?page_id=10#breadcrumb",
                         "itemListElement": [
                             {
                                 "@type": "ListItem",
@@ -80,7 +81,7 @@
                     {
                         "@type": "Organization",
                         "@id": "#organization",
-                        "name": "Global-Group",
+                        "name": "global_group",
                         "url": "",
                         "logo": {
                             "@type": "ImageObject",
@@ -90,7 +91,7 @@
                             "contentUrl": "wp-content/uploads/2025/10/a.jpg",
                             "width": 1024,
                             "height": 1024,
-                            "caption": "Global-Group"
+                            "caption": "global_group"
                         },
                         "image": {
                             "@id": "#/schema/logo/image/"
@@ -106,6 +107,28 @@
         <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
         <link rel="alternate" type="application/rss+xml" title="Global Group  &raquo; Flux" href="?feed=rss2"/>
         <link rel="alternate" type="application/rss+xml" title="Global Group  &raquo; Flux des commentaires" href="?feed=comments-rss2"/>
+        <script>
+            (function() {
+                var docEL = document.documentElement;
+                var style = docEL.style;
+                if (!("backgroundAttachment"in style))
+                    return false;
+                var oldValue = style.backgroundAttachment;
+                style.backgroundAttachment = "fixed";
+                var isSupported = (style.backgroundAttachment === "fixed");
+                style.backgroundAttachment = oldValue;
+
+                if (navigator.userAgent.toLowerCase().indexOf('mac') !== -1 && navigator.maxTouchPoints) {
+                    isSupported = false;
+                }
+
+                if (!isSupported) {
+                    console.warn('Kubio - Browser does not support attachment fix');
+                    document.documentElement.classList.add('kubio-attachment-fixed-support-fallback');
+                }
+            }
+            )()
+        </script>
         <script type="text/javascript">
             /* <![CDATA[ */
             window._wpemojiSettings = {
@@ -114,6 +137,7 @@
                 "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/",
                 "svgExt": ".svg",
                 "source": {
+                    "concatemoji": "http:\/\/localhost\/global_group\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"
                 }
             };
             /*! This file is auto-generated */
@@ -239,6 +263,27 @@
             document), window._wpemojiSettings);
             /* ]]> */
         </script>
+        <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min.css?ver=6.8.3' type='text/css' media='all'/>
+        <link rel='stylesheet' id='admin-bar-css' href='wp-includes/css/admin-bar.min.css?ver=6.8.3' type='text/css' media='all'/>
+        <style id='admin-bar-inline-css' type='text/css'>
+            @media screen {
+                html {
+                    margin-top: 32px !important;
+                }
+            }
+
+            @media screen and ( max-width: 782px ) {
+                html {
+                    margin-top: 46px !important;
+                }
+            }
+
+            @media print {
+                #wpadminbar {
+                    display: none;
+                }
+            }
+        </style>
         <link rel='stylesheet' id='kubio-block-library-css' href='wp-content/plugins/kubio/build/block-library/style.css?ver=1760561632' type='text/css' media='all'/>
         <style id='kubio-block-library-inline-css' type='text/css'>
             .kubio-shape-circles {
@@ -845,13 +890,6 @@
                 min-height: unset;
             }
 
-            #kubio .wp-block.wp-block-kubio-heading__text.style-ZoklZrlU9-text .text-wrapper-fancy svg path {
-                stroke: #000000;
-                stroke-linejoin: initial;
-                stroke-linecap: initial;
-                stroke-width: 8px;
-            }
-
             #kubio .style-kxeqsSpdy-n-inner {
                 text-align: center;
             }
@@ -891,47 +929,6 @@
                 object-fit: cover;
             }
 
-            #kubio .style-T2yqalWyM-metaDataContainer {
-                justify-content: flex-start;
-            }
-
-            #kubio .style-T2yqalWyM-metaDataContainer a {
-                font-family: Syne,Helvetica, Arial, Sans-Serif, serif;
-                font-weight: 400;
-                font-size: 12px;
-                letter-spacing: 1px;
-                color: rgba(var(--kubio-color-6),0.5);
-            }
-
-            #kubio .style-T2yqalWyM-metaDataContainer a:hover {
-                color: rgba(var(--kubio-color-1),1);
-            }
-
-            #kubio .style-T2yqalWyM-metaDataContainer .metadata-prefix {
-                font-family: Syne,Helvetica, Arial, Sans-Serif, serif;
-                font-weight: 400;
-                font-size: 12px;
-                letter-spacing: 1px;
-            }
-
-            #kubio .style-T2yqalWyM-metaDataContainer .metadata-suffix {
-                font-family: Syne,Helvetica, Arial, Sans-Serif, serif;
-                font-weight: 400;
-                font-size: 12px;
-                letter-spacing: 1px;
-            }
-
-            #kubio .style-T2yqalWyM-metaDataContainer .h-svg-icon {
-                width: 20px;
-                height: 20px;
-                margin-right: 5px;
-            }
-
-            #kubio .style-T2yqalWyM-metaDataContainer .metadata-separator {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-
             #kubio p.wp-block.style-yndIzn0LAb-container,#kubio h1.wp-block.style-yndIzn0LAb-container,#kubio h2.wp-block.style-yndIzn0LAb-container,#kubio h3.wp-block.style-yndIzn0LAb-container,#kubio h4.wp-block.style-yndIzn0LAb-container,#kubio h5.wp-block.style-yndIzn0LAb-container,#kubio h6.wp-block.style-yndIzn0LAb-container {
                 text-align: left;
                 padding-top: 15px;
@@ -941,19 +938,10 @@
                 text-decoration: none;
             }
 
-            #kubio .style-fVTtKcA3Zp-text {
-                text-align: justify;
-                font-family: Syne,Helvetica, Arial, Sans-Serif, serif;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 1.4;
-            }
-
             #kubio .style-frj8JuEQEu-outer {
-                height: auto;
-                min-height: unset;
-                padding-top: 30px;
-                padding-bottom: 30px;
+                min-height: 157px;
+                padding-top: 0px;
+                padding-bottom: 26px;
             }
 
             #kubio .style-uawsG3s4Wk-inner {
@@ -994,6 +982,10 @@
                 stroke-width: 8px;
             }
 
+            #kubio p.wp-block.wp-block-kubio-text__text.style-VMGmqWumt2-text {
+                text-align: justify;
+            }
+
             #kubio .style-QYv_iY-Jvjd-inner {
                 text-align: center;
             }
@@ -1003,17 +995,23 @@
                 min-height: unset;
             }
 
+            #kubio .style-Xztj4PcM_wi-outer p {
+                font-size: 14px;
+                color: rgba(var(--kubio-color-6-variant-3),1);
+            }
+
             #kubio .style-b824tY8zUn-outer > .kubio-menu > ul {
-                --kubio-accordion-menu-offset: 14px;
+                --kubio-accordion-menu-offset: 6px;
             }
 
             #kubio .style-b824tY8zUn-outer > .kubio-menu > ul > li > a {
                 font-size: 14px;
                 text-decoration: none;
                 color: rgba(37, 41, 42, 0.7);
-                padding-top: 12px;
-                padding-bottom: 12px;
-                padding-left: 40px;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 100px;
+                padding-right: 100px;
                 border-top-color: #808080;
                 border-right-color: #808080;
                 border-bottom-color: rgba(23, 37, 42, 0.2);
@@ -1036,15 +1034,21 @@
             #kubio .style-b824tY8zUn-outer > .kubio-menu > ul > li > a > svg {
                 padding-left: 20px;
                 padding-right: 20px;
+                width: 3px;
+                height: 3px;
+                margin-left: 5px;
+                margin-right: 5px;
             }
 
             #kubio .style-b824tY8zUn-outer > .kubio-menu li > ul > li> a {
                 font-size: 14px;
+                line-height: 1.7;
                 text-decoration: none;
                 color: rgba(23, 37, 42, 0.7);
-                padding-top: 12px;
-                padding-bottom: 12px;
-                padding-left: 40px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                padding-left: 21px;
+                padding-right: 21px;
                 border-top-color: #808080;
                 border-right-color: #808080;
                 border-bottom-color: rgba(23, 37, 42, 0.2);
@@ -1069,27 +1073,31 @@
                 padding-right: 20px;
             }
 
-            #kubio .style-Xztj4PcM_wi-outer p {
-                font-size: 14px;
-                color: rgba(var(--kubio-color-6-variant-3),1);
-            }
-
-            #kubio .wp-block.wp-block-kubio-heading__text.style-Odxtk0h0Km-text {
+            #kubio .style-5VyqOaJBu-inner {
                 text-align: center;
             }
 
-            #kubio .wp-block.wp-block-kubio-heading__text.style-Odxtk0h0Km-text .text-wrapper-fancy svg path {
+            #kubio .style-5VyqOaJBu-container {
+                height: auto;
+                min-height: unset;
+            }
+
+            #kubio .wp-block.wp-block-kubio-heading__text.style-ik0HlsSnU-text {
+                text-align: justify;
+            }
+
+            #kubio .wp-block.wp-block-kubio-heading__text.style-ik0HlsSnU-text .text-wrapper-fancy svg path {
                 stroke: #000000;
                 stroke-linejoin: initial;
                 stroke-linecap: initial;
                 stroke-width: 8px;
             }
 
-            #kubio .style-PtVe9n_TCq-outer {
+            #kubio .style-H6aZFIts1q-outer {
                 text-align: center;
             }
 
-            #kubio .style-PtVe9n_TCq-outer .h-svg-icon {
+            #kubio .style-H6aZFIts1q-outer .h-svg-icon {
                 margin-right: 15px;
                 padding-top: 0px;
                 padding-bottom: 0px;
@@ -1102,7 +1110,7 @@
                 min-height: 32px;
             }
 
-            #kubio .style-PtVe9n_TCq-outer .h-svg-icon:hover {
+            #kubio .style-H6aZFIts1q-outer .h-svg-icon:hover {
                 fill: rgba(var(--kubio-color-1),1);
             }
 
@@ -1145,18 +1153,23 @@
             }
 
             #kubio .style-local-28-container {
-                width: 25%;
+                width: 6.94%;
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-30-container {
-                flex: 1 1 0;
-                ms-flex: 1 1 0%;
-                max-width: 100%;
+            #kubio .style-local-29-container {
+                width: 93.06%;
+                flex: 0 0 auto;
+                -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-33-container {
+            #kubio .style-local-32-container {
+                flex: 0 0 auto;
+                -ms-flex: 0 0 auto;
+            }
+
+            #kubio .style-local-35-container {
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
@@ -1166,29 +1179,30 @@
                 -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-43-container {
+            #kubio .style-local-41-container {
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-48-container {
+            #kubio .style-local-44-container {
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-53-container {
+            #kubio .style-local-51-container {
+                width: 38.1%;
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-62-container {
-                width: 50%;
+            #kubio .style-local-57-container {
+                width: 41.94%;
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
 
-            #kubio .style-local-68-container {
-                width: 50%;
+            #kubio .style-local-61-container {
+                width: 19.96%;
                 flex: 0 0 auto;
                 -ms-flex: 0 0 auto;
             }
@@ -1658,6 +1672,20 @@
                     width: 33%;
                 }
 
+                #kubio .style-local-29-container {
+                    flex: 1 1 0;
+                    ms-flex: 1 1 0%;
+                    max-width: 100%;
+                }
+
+                #kubio .style-local-51-container {
+                    width: 50%;
+                }
+
+                #kubio .style-local-57-container {
+                    width: 50%;
+                }
+
                 [data-kubio] h1,.with-kubio-global-style h1,h1[data-kubio],.wp-block-woocommerce-mini-cart-contents h1 {
                     font-size: 5em;
                 }
@@ -1761,13 +1789,15 @@
                     width: 100%;
                 }
 
-                #kubio .style-local-30-container {
+                #kubio .style-local-29-container {
                     width: 100%;
-                    flex: 0 0 auto;
-                    -ms-flex: 0 0 auto;
                 }
 
-                #kubio .style-local-33-container {
+                #kubio .style-local-32-container {
+                    width: 100%;
+                }
+
+                #kubio .style-local-35-container {
                     width: 100%;
                 }
 
@@ -1775,23 +1805,23 @@
                     width: 100%;
                 }
 
-                #kubio .style-local-43-container {
+                #kubio .style-local-41-container {
                     width: 100%;
                 }
 
-                #kubio .style-local-48-container {
+                #kubio .style-local-44-container {
                     width: 100%;
                 }
 
-                #kubio .style-local-53-container {
+                #kubio .style-local-51-container {
                     width: 100%;
                 }
 
-                #kubio .style-local-62-container {
+                #kubio .style-local-57-container {
                     width: 100%;
                 }
 
-                #kubio .style-local-68-container {
+                #kubio .style-local-61-container {
                     width: 100%;
                 }
 
@@ -2282,6 +2312,14 @@
         <noscript>
             <link rel='stylesheet' href='wp-content/plugins/kubio/build/third-party-blocks/style.css?ver=1760561633' media='all'>
         </noscript>
+        <link rel='stylesheet' id='wpforms-admin-bar-css' href='wp-content/plugins/wpforms-lite/assets/css/admin-bar.min.css?ver=1.9.8.2' type='text/css' media='all'/>
+        <style id='wpforms-admin-bar-inline-css' type='text/css'>
+            #wpadminbar .wpforms-menu-notification-counter, #wpadminbar .wpforms-menu-notification-indicator {
+                background-color: #d63638 !important;
+                color: #ffffff !important;
+            }
+        </style>
+        <link rel='stylesheet' id='yoast-seo-adminbar-css' href='wp-content/plugins/wordpress-seo/css/dist/adminbar-2611.css' type='text/css' media='all'/>
         <link rel='stylesheet' id='kubio-theme-css' href='wp-content/themes/kubio//resources/theme/fse-base-style.css?ver=1.0.56' type='text/css' media='all'/>
         <script type="text/javascript" src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
         <script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
@@ -2296,7 +2334,410 @@
         <base target="_top">
         <style data-kubio-theme-style="true"></style>
     </head>
-    <body class="blog wp-custom-logo wp-theme-kubio">
+    <body class="blog logged-in admin-bar no-customize-support wp-custom-logo wp-theme-kubio">
+        <script type="text/javascript">
+            /* <![CDATA[ */
+
+            (function() {
+                var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?' + cs + '(\\s+|$)');
+
+                request = true;
+
+                b[c] = b[c].replace(rcs, ' ');
+                // The customizer requires postMessage and CORS (if the site is cross domain).
+                b[c] += (window.postMessage && request ? ' ' : ' no-') + cs;
+            }());
+
+            /* ]]> */
+        </script>
+        <div id="wpadminbar" class="nojq nojs mobile">
+            <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Barre d’outils">
+                <ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu">
+                    <li role='group' id='wp-admin-bar-wp-logo' class="menupop">
+                        <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/about.php'>
+                            <span class="ab-icon" aria-hidden="true"></span>
+                            <span class="screen-reader-text">À propos de WordPress</span>
+                        </a>
+                        <div class="ab-sub-wrapper">
+                            <ul role='menu' aria-label='À propos de WordPress' id='wp-admin-bar-wp-logo-default' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-about'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/about.php'>À propos de WordPress</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-contribute'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/contribute.php'>Contribuer</a>
+                                </li>
+                            </ul>
+                            <ul role='menu' aria-label='À propos de WordPress' id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu">
+                                <li role='group' id='wp-admin-bar-wporg'>
+                                    <a class='ab-item' role="menuitem" href='https://fr.wordpress.org/'>Site de WordPress-FR</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-documentation'>
+                                    <a class='ab-item' role="menuitem" href='https://fr.wordpress.org/support/'>Documentation</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-learn'>
+                                    <a class='ab-item' role="menuitem" href='https://learn.wordpress.org/'>Apprendre WordPress</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-support-forums'>
+                                    <a class='ab-item' role="menuitem" href='https://wpfr.net/support'>Forums de support</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-feedback'>
+                                    <a class='ab-item' role="menuitem" href='https://wordpress.org/support/forum/requests-and-feedback'>Vos retours</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li role='group' id='wp-admin-bar-site-name' class="menupop">
+                        <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/'>Global Group</a>
+                        <div class="ab-sub-wrapper">
+                            <ul role='menu' aria-label='Global Group' id='wp-admin-bar-site-name-default' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-dashboard'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/'>Tableau de bord</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-plugins'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/plugins.php'>Extensions</a>
+                                </li>
+                            </ul>
+                            <ul role='menu' aria-label='Global Group' id='wp-admin-bar-appearance' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-themes'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/themes.php'>Thèmes</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-menus'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/nav-menus.php'>Menus</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-background' class="hide-if-customize">
+                                    <a class='ab-item' role="menuitem" href='wp-admin/themes.php?page=custom-background'>Arrière-plan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li role='group' id='wp-admin-bar-customize' class="hide-if-no-customize">
+                        <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=kubio&#038;pageURL=?page_id=10'>Personnaliser</a>
+                    </li>
+                    <li role='group' id='wp-admin-bar-comments'>
+                        <a class='ab-item' role="menuitem" href='wp-admin/edit-comments.php'>
+                            <span class="ab-icon" aria-hidden="true"></span>
+                            <span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span>
+                            <span class="screen-reader-text comments-in-moderation-text">0 commentaire en modération</span>
+                        </a>
+                    </li>
+                    <li role='group' id='wp-admin-bar-new-content' class="menupop">
+                        <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/post-new.php'>
+                            <span class="ab-icon" aria-hidden="true"></span>
+                            <span class="ab-label">Créer</span>
+                        </a>
+                        <div class="ab-sub-wrapper">
+                            <ul role='menu' aria-label='Créer' id='wp-admin-bar-new-content-default' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-new-post'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/post-new.php'>Article</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-new-media'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/media-new.php'>Fichier média</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-new-page'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/post-new.php?post_type=page'>Page</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-new-user'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/user-new.php'>Compte</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-builder'>WPForms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li role='group' id='wp-admin-bar-kubio-site-editor'>
+                        <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=kubio&#038;pageURL=?page_id=10'>
+                            <span class="kubio-admin-bar-menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+                                    <path d="M5.77,320a5,5,0,0,1-4.27-4.94V175a5,5,0,0,1,5-5H146.56a5,5,0,0,1,4.94,4.26A150.06,150.06,0,0,1,5.77,320Z"/>
+                                    <path d="M176,150a2,2,0,0,1-1.5-1.93V8a2,2,0,0,1,2-2H316.56A2,2,0,0,1,318.5,7.5,147.06,147.06,0,0,1,176,150Z"/>
+                                    <path d="M176.51,314a2,2,0,0,1-2-2V171.93A2,2,0,0,1,176,170,147.06,147.06,0,0,1,318.5,312.5a2,2,0,0,1-1.94,1.49Z"/>
+                                    <path d="M151.5,145.74a5,5,0,0,1-4.94,4.26H6.51a5,5,0,0,1-5-5V4.94A5,5,0,0,1,5.77,0,150.06,150.06,0,0,1,151.5,145.74Z"/>
+                                </svg>
+                                <span>Edit with Kubio</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li role='group' id='wp-admin-bar-edit'>
+                        <a class='ab-item' role="menuitem" href='wp-admin/post.php?post=10&#038;action=edit'>Modifier la page</a>
+                    </li>
+                    <li role='group' id='wp-admin-bar-wpseo-menu' class="menupop">
+                        <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/admin.php?page=wpseo_dashboard'>
+                            <div id="yoast-ab-icon" class="ab-item yoast-logo svg">
+                                <span class="screen-reader-text">SEO</span>
+                            </div>
+                            <div class="wp-core-ui wp-ui-notification yoast-issue-counter">
+                                <span class="yoast-issues-count" aria-hidden="true">2</span>
+                                <span class="screen-reader-text">2 notifications</span>
+                            </div>
+                        </a>
+                        <div class="ab-sub-wrapper">
+                            <ul role='menu' id='wp-admin-bar-wpseo-menu-default' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-wpseo-notifications'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpseo_dashboard#/alert-center'>
+                                        Notifications 
+                                        <div class="wp-core-ui wp-ui-notification yoast-issue-counter">
+                                            <span class="yoast-issues-count" aria-hidden="true">2</span>
+                                            <span class="screen-reader-text">2 notifications</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpseo-analysis' class="menupop">
+                                    <div class="ab-item ab-empty-item" tabindex="0" role="menuitem" aria-expanded="false">
+                                        <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                        Analyser cette page
+                                    </div>
+                                    <div class="ab-sub-wrapper">
+                                        <ul role='menu' id='wp-admin-bar-wpseo-analysis-default' class="ab-submenu">
+                                            <li role='group' id='wp-admin-bar-wpseo-inlinks'>
+                                                <a class='ab-item' role="menuitem" href='https://search.google.com/search-console/links/drilldown?resource_id=http%3A%2F%2Flocalhost%2Fglobal_group&#038;type=EXTERNAL&#038;target=http%3A%2F%2Flocalhost%2Fglobal_group%2F%3Fpage_id%3D10&#038;domain=' target='_blank'>Vérifier les liens vers cette URL</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-structureddata'>
+                                                <a class='ab-item' role="menuitem" href='https://search.google.com/test/rich-results?url=http%3A%2F%2Flocalhost%2Fglobal_group%2F%3Fpage_id%3D10' target='_blank'>Test de résultats enrichis Google</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-facebookdebug'>
+                                                <a class='ab-item' role="menuitem" href='//developers.facebook.com/tools/debug/?q=http%3A%2F%2Flocalhost%2Fglobal_group%2F%3Fpage_id%3D10' target='_blank'>Facebook Debugger</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-pagespeed'>
+                                                <a class='ab-item' role="menuitem" href='//developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Flocalhost%2Fglobal_group%2F%3Fpage_id%3D10' target='_blank'>Test de vitesse de page Google</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpseo-sub-tools' class="menupop">
+                                    <div class="ab-item ab-empty-item" tabindex="0" role="menuitem" aria-expanded="false">
+                                        <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                        Outils SEO
+                                    </div>
+                                    <div class="ab-sub-wrapper">
+                                        <ul role='menu' id='wp-admin-bar-wpseo-sub-tools-default' class="ab-submenu">
+                                            <li role='group' id='wp-admin-bar-wpseo-semrush'>
+                                                <a class='ab-item' role="menuitem" href='https://yoa.st/admin-bar-semrush?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR' target='_blank'>Semrush</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-wincher'>
+                                                <a class='ab-item' role="menuitem" href='https://yoa.st/admin-bar-wincher?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR' target='_blank'>Wincher</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-google-trends'>
+                                                <a class='ab-item' role="menuitem" href='https://yoa.st/admin-bar-gtrends?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR' target='_blank'>Google trends</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpseo-sub-howto' class="menupop">
+                                    <div class="ab-item ab-empty-item" tabindex="0" role="menuitem" aria-expanded="false">
+                                        <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                        Tutoriel
+                                    </div>
+                                    <div class="ab-sub-wrapper">
+                                        <ul role='menu' id='wp-admin-bar-wpseo-sub-howto-default' class="ab-submenu">
+                                            <li role='group' id='wp-admin-bar-wpseo-learn-seo'>
+                                                <a class='ab-item' role="menuitem" href='https://yoa.st/admin-bar-learn-more-seo?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR' target='_blank'>Approfondissez le SEO</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-improve-blogpost'>
+                                                <a class='ab-item' role="menuitem" href='https://yoa.st/admin-bar-improve-blog-post?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR' target='_blank'>Améliorez votre article</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-write-better-content'>
+                                                <a class='ab-item' role="menuitem" href='https://yoa.st/admin-bar-write-better?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR' target='_blank'>Écrivez un meilleur contenu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpseo-sub-get-help'>
+                                    <a class='ab-item' tabindex="0" role="menuitem" href='wp-admin/admin.php?page=wpseo_page_support'>Aide</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpseo-settings' class="menupop">
+                                    <div class="ab-item ab-empty-item" tabindex="0" role="menuitem" aria-expanded="false">
+                                        <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                        Réglages SEO
+                                    </div>
+                                    <div class="ab-sub-wrapper">
+                                        <ul role='menu' id='wp-admin-bar-wpseo-settings-default' class="ab-submenu">
+                                            <li role='group' id='wp-admin-bar-wpseo-page-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpseo_page_settings'>Réglages</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-tools'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpseo_tools'>Outils</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpseo-licenses'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpseo_licenses'>Formules</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpseo-get-premium'>
+                                    <div class="ab-item ab-empty-item" tabindex="0" role="menuitem">
+                                        <a href="https://yoa.st/admin-bar-get-premium?php_version=8.3&#038;platform=wordpress&#038;platform_version=6.8.3&#038;software=free&#038;software_version=26.1.1&#038;days_active=2&#038;user_language=fr_FR" target="_blank" data-action="load-nfd-ctb" data-ctb-id="f6a84663-465f-4cb5-8ba5-f7a6d72224b2">Mettre à niveau</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li role='group' id='wp-admin-bar-wpforms-menu' class="menupop">
+                        <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/admin.php?page=wpforms-overview'>WPForms</a>
+                        <div class="ab-sub-wrapper">
+                            <ul role='menu' id='wp-admin-bar-wpforms-menu-default' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-wpforms-forms'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-overview'>Tous les formulaires</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-add-new'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-builder'>Add New Form</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-payments'>
+                                    <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-payments'>Paiements</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-settings' class="menupop">
+                                    <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/admin.php?page=wpforms-settings'>
+                                        <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                        Réglages
+                                    </a>
+                                    <div class="ab-sub-wrapper">
+                                        <ul role='menu' id='wp-admin-bar-wpforms-settings-default' class="ab-submenu">
+                                            <li role='group' id='wp-admin-bar-wpforms-general-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=general'>Général</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-email-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=email'>E-mail</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-captcha-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=captcha'>CAPTCHA</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-validation-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=validation'>Validation</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-payments-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=payments'>Paiements</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-integrations-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=integrations'>Intégrations</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-geolocation-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=geolocation'>Géolocalisation</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-access-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=access'>Contrôle d’accès</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-misc-settings'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-settings&#038;view=misc'>Divers</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-tools' class="menupop">
+                                    <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/admin.php?page=wpforms-tools'>
+                                        <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                        Outils
+                                    </a>
+                                    <div class="ab-sub-wrapper">
+                                        <ul role='menu' id='wp-admin-bar-wpforms-tools-default' class="ab-submenu">
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-import'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=import'>Importer</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-export'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=export'>Exporter</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-entry-automation'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=entry-automation'>Entry Automation</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-system'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=system'>Infos syst &egrave;me</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler' class="menupop">
+                                                <a class='ab-item' role="menuitem" aria-expanded="false" href='wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms'>
+                                                    <span class="wp-admin-bar-arrow" aria-hidden="true"></span>
+                                                    Actions planifiées
+                                                </a>
+                                                <div class="ab-sub-wrapper">
+                                                    <ul role='menu' id='wp-admin-bar-wpforms-tools-action-scheduler-default' class="ab-submenu">
+                                                        <li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-all'>
+                                                            <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;orderby=hook&#038;order=desc'>Tout voir</a>
+                                                        </li>
+                                                        <li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-complete'>
+                                                            <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=complete&#038;orderby=hook&#038;order=desc'>Actions terminées</a>
+                                                        </li>
+                                                        <li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-failed'>
+                                                            <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=failed&#038;orderby=hook&#038;order=desc'>Actions échouées</a>
+                                                        </li>
+                                                        <li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-pending'>
+                                                            <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=pending&#038;orderby=hook&#038;order=desc'>Actions en attente</a>
+                                                        </li>
+                                                        <li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-past-due'>
+                                                            <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=past-due&#038;orderby=hook&#038;order=desc'>Actions en retard</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-logs'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=logs'>Journaux</a>
+                                            </li>
+                                            <li role='group' id='wp-admin-bar-wpforms-tools-wpcode'>
+                                                <a class='ab-item' role="menuitem" href='wp-admin/admin.php?page=wpforms-tools&#038;view=wpcode'>Extraits de code</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-community'>
+                                    <a class='ab-item' role="menuitem" href='https://www.facebook.com/groups/wpformsvip/' target='_blank' rel='noopener noreferrer'>Communauté</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-help-docs'>
+                                    <a class='ab-item' role="menuitem" href='https://wpforms.com/docs/?utm_campaign=liteplugin&#038;utm_medium=admin-bar&#038;utm_source=WordPress&#038;utm_content=Documentation' target='_blank' rel='noopener noreferrer'>Docs d’aide</a>
+                                </li>
+                                <li role='group' id='wp-admin-bar-wpforms-upgrade'>
+                                    <a class='ab-item' role="menuitem" href='https://wpforms.com/lite-upgrade/?utm_campaign=liteplugin&#038;utm_source=WordPress&#038;utm_medium=admin-bar&#038;utm_content=Upgrade%20to%20Pro&#038;utm_locale=fr_FR' target='_blank' rel='noopener noreferrer'>Passer à la version Pro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu">
+                    <li role='group' id='wp-admin-bar-my-account' class="menupop with-avatar">
+                       
+                        <div class="ab-sub-wrapper">
+                            <ul role='menu' aria-label='Bonjour, root' id='wp-admin-bar-user-actions' class="ab-submenu">
+                                <li role='group' id='wp-admin-bar-user-info'>
+                                   
+                                </li>
+                                <li role='group' id='wp-admin-bar-logout'>
+                                    <a class='ab-item' role="menuitem" href='wp-login.php?action=logout&#038;_wpnonce=edbd84e7d8'>Se déconnecter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li role='group' id='wp-admin-bar-search' class="admin-bar-search">
+                        <div class="ab-item ab-empty-item" tabindex="-1" role="menuitem">
+                            <form action="" method="get" id="adminbarsearch">
+                                <input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"/>
+                                <label for="adminbar-search" class="screen-reader-text">Rechercher</label>
+                                <input type="submit" class="adminbar-button" value="Rechercher"/>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            .kubio-admin-bar-menu-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .kubio-admin-bar-menu-item span {
+                display: block;
+                white-space: nowrap;
+            }
+
+            .kubio-admin-bar-menu-item svg {
+                max-height: 14px;
+                fill: #09f;
+                flex-grow: 0;
+                min-width: 20px;
+                margin-right: 0.4em !important;
+            }
+
+            a:focus .kubio-admin-tbar-menu-item, a:hover .kubio-admin-tbar-menu-item {
+                background: rgba(0, 153 ,255 , 0.6);
+                color: #fff;
+            }
+        </style>
         <div id="page-top" tabindex="-1"></div>
         <div class="wp-site-blocks">
             <div class="wp-block wp-block-kubio-header  position-relative wp-block-kubio-header__container style-theme-Zam-Tq5W3-container" data-kubio="kubio/header">
@@ -2354,7 +2795,7 @@
                                                                     <a href="index.html" style=";--kubio-menu-item-depth:0">Accueil</a>
                                                                 </li>
                                                                 <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item current_page_parent menu-item-12">
-                                                                    <a href="blog.html" aria-current="page" style=";--kubio-menu-item-depth:0">Actualité</a>
+                                                                    <a href="?page_id=10" aria-current="page" style=";--kubio-menu-item-depth:0">Actualité</a>
                                                                 </li>
                                                                 <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41">
                                                                     <a href="a_propos.html" style=";--kubio-menu-item-depth:0">À propos</a>
@@ -2369,16 +2810,16 @@
                                                         </div>
                                                         <div class="wp-block wp-block-kubio-menu-offscreen  position-relative wp-block-kubio-menu-offscreen__container style-LCYaOhT1Q-f-container style-local-12-container" data-kubio="kubio/menu-offscreen">
                                                             <div class="position-relative wp-block-kubio-menu-offscreen__align style-LCYaOhT1Q-f-align style-local-12-align">
-                                                                <button class="position-relative wp-block-kubio-menu-offscreen__iconWrapper style-LCYaOhT1Q-f-iconWrapper style-local-12-iconWrapper kubio-offscreen-icon-wrapper" data-target="#kubio-offscreen-68f0e72f28b0d" data-target-id="kubio-offscreen-68f0e72f28b0d" data-direction="right" data-width="300px" data-offcanvas-overlay-id="kubio-offscreen-68f0e72f28b0d-overlay" aria-label="Menu mobile" data-kubio-component="offcanvas" data-kubio-settings="[]">
+                                                                <button class="position-relative wp-block-kubio-menu-offscreen__iconWrapper style-LCYaOhT1Q-f-iconWrapper style-local-12-iconWrapper kubio-offscreen-icon-wrapper" data-target="#kubio-offscreen-68f2a3de5f09c" data-target-id="kubio-offscreen-68f2a3de5f09c" data-direction="right" data-width="300px" data-offcanvas-overlay-id="kubio-offscreen-68f2a3de5f09c-overlay" aria-label="Menu mobile" data-kubio-component="offcanvas" data-kubio-settings="[]">
                                                                     <span class="h-svg-icon wp-block-kubio-menu-offscreen__icon style-LCYaOhT1Q-f-icon style-local-12-icon" name="icons8-line-awesome/bars">
-                                                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" id="bars" viewBox="0 0 512 545.5">
+                                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="bars" viewBox="0 0 512 545.5">
                                                                             <path d="M64 144h384v32H64v-32zm0 128h384v32H64v-32zm0 128h384v32H64v-32z"/>
                                                                         </svg>
                                                                     </span>
                                                                 </button>
                                                             </div>
-                                                            <div class="position-relative wp-block-kubio-menu-offscreen__offscreenOverlay style-LCYaOhT1Q-f-offscreenOverlay style-local-12-offscreenOverlay kubio-offscreen-overlay offscreen-overlay" id="kubio-offscreen-68f0e72f28b0d-overlay"></div>
-                                                            <div class="position-relative wp-block-kubio-menu-offscreen__offscreen style-LCYaOhT1Q-f-offscreen style-local-12-offscreen kubio-offscreen offscreen hide" id="kubio-offscreen-68f0e72f28b0d">
+                                                            <div class="position-relative wp-block-kubio-menu-offscreen__offscreenOverlay style-LCYaOhT1Q-f-offscreenOverlay style-local-12-offscreenOverlay kubio-offscreen-overlay offscreen-overlay" id="kubio-offscreen-68f2a3de5f09c-overlay"></div>
+                                                            <div class="position-relative wp-block-kubio-menu-offscreen__offscreen style-LCYaOhT1Q-f-offscreen style-local-12-offscreen kubio-offscreen offscreen hide" id="kubio-offscreen-68f2a3de5f09c">
                                                                 <div class="position-relative wp-block-kubio-menu-offscreen__inner style-LCYaOhT1Q-f-inner style-local-12-inner">
                                                                     <div class="wp-block wp-block-kubio-menu-offscreen-content  position-relative wp-block-kubio-menu-offscreen-content__container style-g9zzHP3uLIb-container style-local-13-container" data-kubio="kubio/menu-offscreen-content">
                                                                         <div class="wp-block wp-block-kubio-row  position-relative wp-block-kubio-row__container style-XskQfsGZMJw-container style-local-14-container gutters-row-lg-3 gutters-row-v-lg-2 gutters-row-md-3 gutters-row-v-md-2 gutters-row-3 gutters-row-v-3" data-kubio="kubio/row">
@@ -2411,7 +2852,7 @@
                                                                                         <a href="index.html" style=";--kubio-menu-item-depth:0">Accueil</a>
                                                                                     </li>
                                                                                     <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item current_page_parent menu-item-12">
-                                                                                        <a href="blog.html" aria-current="page" style=";--kubio-menu-item-depth:0">Actualité</a>
+                                                                                        <a href="?page_id=10" aria-current="page" style=";--kubio-menu-item-depth:0">Actualité</a>
                                                                                     </li>
                                                                                     <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41">
                                                                                         <a href="a_propos.html" style=";--kubio-menu-item-depth:0">À propos</a>
@@ -2549,59 +2990,63 @@
                                         <div class="background-layer background-layer-media-container-md"></div>
                                         <div class="background-layer background-layer-media-container"></div>
                                     </div>
-                                    <div class="position-relative wp-block-kubio-column__align style-FwcIquvVBo-align style-local-28-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
-                                        <h3 class="wp-block wp-block-kubio-heading  position-relative wp-block-kubio-heading__text style-ZoklZrlU9-text style-local-29-text" data-kubio="kubio/heading">Découvrez nos dernières analyses, conseils et informations sur la construction, le bâtiment et le génie civil.</h3>
-                                    </div>
+                                    <div class="position-relative wp-block-kubio-column__align style-FwcIquvVBo-align style-local-28-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start"></div>
                                 </div>
                             </div>
-                            <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-kxeqsSpdy-n-container style-local-30-container d-flex h-col-lg h-col-md h-col-auto" data-kubio="kubio/column">
-                                <div class="position-relative wp-block-kubio-column__inner style-kxeqsSpdy-n-inner style-local-30-inner d-flex h-flex-basis h-px-lg-2 v-inner-lg-0 h-px-md-2 v-inner-md-0 h-px-2 v-inner-0">
+                            <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-kxeqsSpdy-n-container style-local-29-container d-flex h-col-lg-auto h-col-md h-col-auto" data-kubio="kubio/column">
+                                <div class="position-relative wp-block-kubio-column__inner style-kxeqsSpdy-n-inner style-local-29-inner d-flex h-flex-basis h-px-lg-2 v-inner-lg-0 h-px-md-2 v-inner-md-0 h-px-2 v-inner-0">
                                     <div class="background-wrapper">
                                         <div class="background-layer background-layer-media-container-lg"></div>
                                         <div class="background-layer background-layer-media-container-md"></div>
                                         <div class="background-layer background-layer-media-container"></div>
                                     </div>
-                                    <div class="position-relative wp-block-kubio-column__align style-kxeqsSpdy-n-align style-local-30-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
-                                        <div class="wp-block wp-block-kubio-query  position-relative wp-block-kubio-query__container style-CtKC_EuIZL-container style-local-31-container" data-kubio="kubio/query">
-                                            <div class="wp-block wp-block-kubio-query-loop  position-relative wp-block-kubio-query-loop__container style-vrf0UGkWrN-container style-local-32-container gutters-row-lg-2 gutters-row-v-lg-0 gutters-row-md-2 gutters-row-v-md-0 gutters-row-0 gutters-row-v-0" data-kubio="kubio/query-loop" data-kubio-component="masonry" data-kubio-settings="{&quot;enabled&quot;:&quot;1&quot;,&quot;targetSelector&quot;:&quot;.wp-block-kubio-query-loop__inner&quot;}">
+                                    <div class="position-relative wp-block-kubio-column__align style-kxeqsSpdy-n-align style-local-29-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
+                                        <div class="wp-block wp-block-kubio-query  position-relative wp-block-kubio-query__container style-CtKC_EuIZL-container style-local-30-container" data-kubio="kubio/query">
+                                            <div class="wp-block wp-block-kubio-query-loop  position-relative wp-block-kubio-query-loop__container style-vrf0UGkWrN-container style-local-31-container gutters-row-lg-2 gutters-row-v-lg-0 gutters-row-md-2 gutters-row-v-md-0 gutters-row-0 gutters-row-v-0" data-kubio="kubio/query-loop" data-kubio-component="masonry" data-kubio-settings="{&quot;enabled&quot;:&quot;1&quot;,&quot;targetSelector&quot;:&quot;.wp-block-kubio-query-loop__inner&quot;}">
                                                 <div class="background-wrapper">
                                                     <div class="background-layer background-layer-media-container-lg"></div>
                                                     <div class="background-layer background-layer-media-container-md"></div>
                                                     <div class="background-layer background-layer-media-container"></div>
                                                 </div>
-                                                <div class="position-relative wp-block-kubio-query-loop__inner style-vrf0UGkWrN-inner style-local-32-inner h-row gutters-col-lg-2 gutters-col-v-lg-0 gutters-col-md-2 gutters-col-v-md-0 gutters-col-0 gutters-col-v-0 align-items-lg-stretch align-items-md-stretch align-items-stretch justify-content-lg-start justify-content-md-start justify-content-start kubio-query-loop--use-masonry">
+                                                <div class="position-relative wp-block-kubio-query-loop__inner style-vrf0UGkWrN-inner style-local-31-inner h-row gutters-col-lg-2 gutters-col-v-lg-0 gutters-col-md-2 gutters-col-v-md-0 gutters-col-0 gutters-col-v-0 align-items-lg-stretch align-items-md-stretch align-items-stretch justify-content-lg-start justify-content-md-start justify-content-start kubio-query-loop--use-masonry">
                                                     <!--kubio post list : start-->
-                                                    <div class="wp-block wp-block-kubio-query-loop-item  position-relative wp-block-kubio-query-loop-item__container style-fx1L_l5Ny--container style-local-33-container d-flex h-col-lg-6 h-col-md-6 h-col-12 post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe" data-kubio="kubio/query-loop-item">
-                                                        <div class="position-relative wp-block-kubio-query-loop-item__inner style-fx1L_l5Ny--inner style-local-33-inner d-flex h-flex-basis h-px-lg-0 v-inner-lg-0 h-px-md-0 v-inner-md-3 h-px-0 v-inner-0">
+                                                    <div class="wp-block wp-block-kubio-query-loop-item  position-relative wp-block-kubio-query-loop-item__container style-fx1L_l5Ny--container style-local-32-container d-flex h-col-lg-6 h-col-md-6 h-col-12 post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe" data-kubio="kubio/query-loop-item">
+                                                        <div class="position-relative wp-block-kubio-query-loop-item__inner style-fx1L_l5Ny--inner style-local-32-inner d-flex h-flex-basis h-px-lg-0 v-inner-lg-0 h-px-md-0 v-inner-md-3 h-px-0 v-inner-0">
                                                             <div class="background-wrapper">
                                                                 <div class="background-layer background-layer-media-container-lg"></div>
                                                                 <div class="background-layer background-layer-media-container-md"></div>
                                                                 <div class="background-layer background-layer-media-container"></div>
                                                             </div>
-                                                            <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-33-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
-                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-34-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article1.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
-                                                                    <img width="960" height="540" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-34-image wp-image-123" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7.jpg 960w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"/>
-                                                                    <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-34-inner">
-                                                                        <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-34-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
+                                                            <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-32-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
+                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-33-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article1.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
+                                                                    <img width="960" height="540" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-33-image wp-image-123" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7.jpg 960w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.09.00_e6f8c7d7-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"/>
+                                                                    <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-33-inner">
+                                                                        <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-33-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
                                                                     </div>
                                                                 </figure>
-                                                                <div class="wp-block wp-block-kubio-post-meta  position-relative wp-block-kubio-post-meta__metaDataContainer style-T2yqalWyM-metaDataContainer style-local-35-metaDataContainer h-blog-meta" data-kubio="kubio/post-meta" id="post-metadata">
-                                                                    <span class="metadata-item">
-                                                                        <a href="?author=1">GLOBAL GROUP					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="?m=20251016">16 octobre 2025					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="index.html">12h39					</a>
-                                                                    </span>
-                                                                </div>
-                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-36-link d-block" href="article1.html">
-                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-36-container" data-kubio="kubio/post-title">Type Duplex à un niveau</h3>
+                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-34-link d-block" href="article1.html">
+                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-34-container" data-kubio="kubio/post-title">Type Duplex à un seul niveau</h3>
                                                                 </a>
-                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wp-block wp-block-kubio-query-loop-item  position-relative wp-block-kubio-query-loop-item__container style-fx1L_l5Ny--container style-local-35-container d-flex h-col-lg-6 h-col-md-6 h-col-12 post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe" data-kubio="kubio/query-loop-item">
+                                                        <div class="position-relative wp-block-kubio-query-loop-item__inner style-fx1L_l5Ny--inner style-local-35-inner d-flex h-flex-basis h-px-lg-0 v-inner-lg-0 h-px-md-0 v-inner-md-3 h-px-0 v-inner-0">
+                                                            <div class="background-wrapper">
+                                                                <div class="background-layer background-layer-media-container-lg"></div>
+                                                                <div class="background-layer background-layer-media-container-md"></div>
+                                                                <div class="background-layer background-layer-media-container"></div>
+                                                            </div>
+                                                            <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-35-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
+                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-36-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article2.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
+                                                                    <img width="960" height="540" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-36-image wp-image-119" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b.jpg 960w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"/>
+                                                                    <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-36-inner">
+                                                                        <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-36-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
+                                                                    </div>
+                                                                </figure>
+                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-37-link d-block" href="article2.html">
+                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-37-container" data-kubio="kubio/post-title">Type Duplex à deux niveaux</h3>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2613,97 +3058,35 @@
                                                                 <div class="background-layer background-layer-media-container"></div>
                                                             </div>
                                                             <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-38-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
-                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-39-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article2.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
-                                                                    <img width="960" height="540" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-39-image wp-image-119" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b.jpg 960w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.39.21_5ff5842b-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"/>
+                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-39-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article3.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
+                                                                    <img width="960" height="540" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-39-image wp-image-113" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d.jpg 960w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"/>
                                                                     <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-39-inner">
                                                                         <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-39-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
                                                                     </div>
                                                                 </figure>
-                                                                <div class="wp-block wp-block-kubio-post-meta  position-relative wp-block-kubio-post-meta__metaDataContainer style-T2yqalWyM-metaDataContainer style-local-40-metaDataContainer h-blog-meta" data-kubio="kubio/post-meta" id="post-metadata">
-                                                                    <span class="metadata-item">
-                                                                        <a href="?author=1">GLOBAL GROUP					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="?m=20251016">16 octobre 2025					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="index.html">12h35					</a>
-                                                                    </span>
-                                                                </div>
-                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-41-link d-block" href="article2.html">
-                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-41-container" data-kubio="kubio/post-title">Type Duplex à deux niveaux</h3>
+                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-40-link d-block" href="article3.html">
+                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-40-container" data-kubio="kubio/post-title">Complexe scolaire</h3>
                                                                 </a>
-                                                                
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="wp-block wp-block-kubio-query-loop-item  position-relative wp-block-kubio-query-loop-item__container style-fx1L_l5Ny--container style-local-43-container d-flex h-col-lg-6 h-col-md-6 h-col-12 post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe" data-kubio="kubio/query-loop-item">
-                                                        <div class="position-relative wp-block-kubio-query-loop-item__inner style-fx1L_l5Ny--inner style-local-43-inner d-flex h-flex-basis h-px-lg-0 v-inner-lg-0 h-px-md-0 v-inner-md-3 h-px-0 v-inner-0">
+                                                    <div class="wp-block wp-block-kubio-query-loop-item  position-relative wp-block-kubio-query-loop-item__container style-fx1L_l5Ny--container style-local-41-container d-flex h-col-lg-6 h-col-md-6 h-col-12 post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe" data-kubio="kubio/query-loop-item">
+                                                        <div class="position-relative wp-block-kubio-query-loop-item__inner style-fx1L_l5Ny--inner style-local-41-inner d-flex h-flex-basis h-px-lg-0 v-inner-lg-0 h-px-md-0 v-inner-md-3 h-px-0 v-inner-0">
                                                             <div class="background-wrapper">
                                                                 <div class="background-layer background-layer-media-container-lg"></div>
                                                                 <div class="background-layer background-layer-media-container-md"></div>
                                                                 <div class="background-layer background-layer-media-container"></div>
                                                             </div>
-                                                            <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-43-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
-                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-44-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article3.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
-                                                                    <img width="960" height="540" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-44-image wp-image-113" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d.jpg 960w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-16.29.21_62f8544d-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"/>
-                                                                    <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-44-inner">
-                                                                        <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-44-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
+                                                            <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-41-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
+                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-42-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article4.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
+                                                                    <img width="1280" height="720" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-42-image wp-image-94" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1.jpg 1280w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1-1024x576.jpg 1024w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1-768x432.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"/>
+                                                                    <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-42-inner">
+                                                                        <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-42-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
                                                                     </div>
                                                                 </figure>
-                                                                <div class="wp-block wp-block-kubio-post-meta  position-relative wp-block-kubio-post-meta__metaDataContainer style-T2yqalWyM-metaDataContainer style-local-45-metaDataContainer h-blog-meta" data-kubio="kubio/post-meta" id="post-metadata">
-                                                                    <span class="metadata-item">
-                                                                        <a href="?author=1">GLOBAL GROUP					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="?m=20251016">16 octobre 2025					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="index.html">12h32					</a>
-                                                                    </span>
-                                                                </div>
-                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-46-link d-block" href="article3.html">
-                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-46-container" data-kubio="kubio/post-title">Complexe scolaire</h3>
+                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-43-link d-block" href="article4.html">
+                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-43-container" data-kubio="kubio/post-title">Type F4 moderne</h3>
                                                                 </a>
-                                                               
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wp-block wp-block-kubio-query-loop-item  position-relative wp-block-kubio-query-loop-item__container style-fx1L_l5Ny--container style-local-48-container d-flex h-col-lg-6 h-col-md-6 h-col-12 post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-non-classe" data-kubio="kubio/query-loop-item">
-                                                        <div class="position-relative wp-block-kubio-query-loop-item__inner style-fx1L_l5Ny--inner style-local-48-inner d-flex h-flex-basis h-px-lg-0 v-inner-lg-0 h-px-md-0 v-inner-md-3 h-px-0 v-inner-0">
-                                                            <div class="background-wrapper">
-                                                                <div class="background-layer background-layer-media-container-lg"></div>
-                                                                <div class="background-layer background-layer-media-container-md"></div>
-                                                                <div class="background-layer background-layer-media-container"></div>
-                                                            </div>
-                                                            <div class="position-relative wp-block-kubio-query-loop-item__align style-fx1L_l5Ny--align style-local-48-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
-                                                                <figure class="wp-block wp-block-kubio-post-featured-image  position-relative wp-block-kubio-post-featured-image__container style-6duco09NdG-container style-local-49-container kubio-post-featured-image--has-image h-aspect-ratio--16-9" data-kubio="kubio/post-featured-image" data-kubio-component="link" data-kubio-settings="{&quot;href&quot;:&quot;article4.html&quot;,&quot;target&quot;:null,&quot;rel&quot;:null,&quot;data-kubio-component&quot;:null}">
-                                                                    <img width="1280" height="720" class="position-relative wp-block-kubio-post-featured-image__image style-6duco09NdG-image style-local-49-image wp-image-94" src="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1.jpg" srcset="wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1.jpg 1280w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1-300x169.jpg 300w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1-1024x576.jpg 1024w, wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-a-15.34.53_2697aed1-768x432.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"/>
-                                                                    <div class="position-relative wp-block-kubio-post-featured-image__inner style-6duco09NdG-inner style-local-49-inner">
-                                                                        <div class="position-relative wp-block-kubio-post-featured-image__align style-6duco09NdG-align style-local-49-align h-y-container align-self-lg-center align-self-md-center align-self-center"></div>
-                                                                    </div>
-                                                                </figure>
-                                                                <div class="wp-block wp-block-kubio-post-meta  position-relative wp-block-kubio-post-meta__metaDataContainer style-T2yqalWyM-metaDataContainer style-local-50-metaDataContainer h-blog-meta" data-kubio="kubio/post-meta" id="post-metadata">
-                                                                    <span class="metadata-item">
-                                                                        <a href="?author=1">GLOBAL GROUP					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="?m=20251016">16 octobre 2025					</a>
-                                                                    </span>
-                                                                    <span class="metadata-separator">- </span>
-                                                                    <span class="metadata-item">
-                                                                        <a href="index.html">12h01					</a>
-                                                                    </span>
-                                                                </div>
-                                                                <a class="position-relative wp-block-kubio-post-title__link style-yndIzn0LAb-link style-local-51-link d-block" href="article4.html">
-                                                                    <h3 class="wp-block wp-block-kubio-post-title  position-relative wp-block-kubio-post-title__container style-yndIzn0LAb-container style-local-51-container" data-kubio="kubio/post-title">Type F4 moderne</h3>
-                                                                </a>
-                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2718,68 +3101,69 @@
                     </div>
                 </div>
             </div>
-            <div class="wp-block wp-block-kubio-footer  position-relative wp-block-kubio-footer__container style-theme-gt1_zEKay-container style-local-59-container" data-kubio="kubio/footer" data-kubio-component="footer-parallax" data-kubio-settings="{&quot;isEnabled&quot;:null}">
-                <div class="wp-block wp-block-kubio-section  position-relative wp-block-kubio-section__outer style-frj8JuEQEu-outer style-local-60-outer d-flex h-section-global-spacing align-items-lg-center align-items-md-center align-items-center" data-kubio="kubio/section" id="pied-de-page">
+            <div class="wp-block wp-block-kubio-footer  position-relative wp-block-kubio-footer__container style-theme-gt1_zEKay-container style-local-48-container" data-kubio="kubio/footer" data-kubio-component="footer-parallax" data-kubio-settings="{&quot;isEnabled&quot;:null}">
+                <div class="wp-block wp-block-kubio-section  position-relative wp-block-kubio-section__outer style-frj8JuEQEu-outer style-local-49-outer d-flex h-section-global-spacing align-items-lg-center align-items-md-center align-items-center" data-kubio="kubio/section" id="pied-de-page">
                     <div class="background-wrapper">
                         <div class="background-layer background-layer-media-container-lg"></div>
                         <div class="background-layer background-layer-media-container-md"></div>
                         <div class="background-layer background-layer-media-container"></div>
                     </div>
-                    <div class="position-relative wp-block-kubio-section__inner style-frj8JuEQEu-inner style-local-60-inner h-section-grid-container h-section-boxed-container">
-                        <div class="wp-block wp-block-kubio-row  position-relative wp-block-kubio-row__container style-2GWT1S1Ow8-container style-local-61-container gutters-row-lg-3 gutters-row-v-lg-3 gutters-row-md-3 gutters-row-v-md-3 gutters-row-3 gutters-row-v-2" data-kubio="kubio/row">
+                    <div class="position-relative wp-block-kubio-section__inner style-frj8JuEQEu-inner style-local-49-inner h-section-grid-container h-section-boxed-container">
+                        <div class="wp-block wp-block-kubio-row  position-relative wp-block-kubio-row__container style-2GWT1S1Ow8-container style-local-50-container gutters-row-lg-3 gutters-row-v-lg-3 gutters-row-md-3 gutters-row-v-md-3 gutters-row-3 gutters-row-v-2" data-kubio="kubio/row">
                             <div class="background-wrapper">
                                 <div class="background-layer background-layer-media-container-lg"></div>
                                 <div class="background-layer background-layer-media-container-md"></div>
                                 <div class="background-layer background-layer-media-container"></div>
                             </div>
-                            <div class="position-relative wp-block-kubio-row__inner style-2GWT1S1Ow8-inner style-local-61-inner h-row align-items-lg-stretch align-items-md-stretch align-items-stretch justify-content-lg-center justify-content-md-center justify-content-center gutters-col-lg-3 gutters-col-v-lg-3 gutters-col-md-3 gutters-col-v-md-3 gutters-col-3 gutters-col-v-2">
-                                <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-uawsG3s4Wk-container style-local-62-container d-flex h-col-lg-auto h-col-md-auto h-col-auto" data-kubio="kubio/column">
-                                    <div class="position-relative wp-block-kubio-column__inner style-uawsG3s4Wk-inner style-local-62-inner d-flex h-flex-basis h-px-lg-1 v-inner-lg-2 h-px-md-1 v-inner-md-2 h-px-1 v-inner-2">
+                            <div class="position-relative wp-block-kubio-row__inner style-2GWT1S1Ow8-inner style-local-50-inner h-row align-items-lg-stretch align-items-md-stretch align-items-stretch justify-content-lg-start justify-content-md-start justify-content-start gutters-col-lg-3 gutters-col-v-lg-3 gutters-col-md-3 gutters-col-v-md-3 gutters-col-3 gutters-col-v-2">
+                                <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-uawsG3s4Wk-container style-local-51-container d-flex h-col-lg-auto h-col-md-auto h-col-auto" data-kubio="kubio/column">
+                                    <div class="position-relative wp-block-kubio-column__inner style-uawsG3s4Wk-inner style-local-51-inner d-flex h-flex-basis h-px-lg-1 v-inner-lg-2 h-px-md-1 v-inner-md-2 h-px-1 v-inner-2">
                                         <div class="background-wrapper">
                                             <div class="background-layer background-layer-media-container-lg"></div>
                                             <div class="background-layer background-layer-media-container-md"></div>
                                             <div class="background-layer background-layer-media-container"></div>
                                         </div>
-                                        <div class="position-relative wp-block-kubio-column__align style-uawsG3s4Wk-align style-local-62-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-center align-self-md-center align-self-center">
-                                            <a class="wp-block wp-block-kubio-logo  position-relative wp-block-kubio-logo__container style-Lqg_9L63j8-container style-local-63-container kubio-has-gap-fallback kubio-logo-direction-row kubio-logo-without-text autodetect-mode" data-kubio="kubio/logo" href="index.html">
-                                                <img decoding="async" class="position-relative wp-block-kubio-logo__image style-Lqg_9L63j8-image style-local-63-image kubio-logo-image" alt="" src="wp-content/uploads/2025/10/a_-_Copie__2_-removebg-preview.png"/>
-                                                <img decoding="async" class="position-relative wp-block-kubio-logo__alternateImage style-Lqg_9L63j8-alternateImage style-local-63-alternateImage kubio-logo-image kubio-alternate-logo-image" alt="" src="wp-content/uploads/2025/10/a_-_Copie__2_-removebg-preview.png"/>
-                                                <span class="position-relative wp-block-kubio-logo__text style-Lqg_9L63j8-text style-local-63-text"></span>
+                                        <div class="position-relative wp-block-kubio-column__align style-uawsG3s4Wk-align style-local-51-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-center align-self-md-center align-self-center">
+                                            <a class="wp-block wp-block-kubio-logo  position-relative wp-block-kubio-logo__container style-Lqg_9L63j8-container style-local-52-container kubio-has-gap-fallback kubio-logo-direction-row kubio-logo-without-text autodetect-mode" data-kubio="kubio/logo" href="index.html">
+                                                <img decoding="async" class="position-relative wp-block-kubio-logo__image style-Lqg_9L63j8-image style-local-52-image kubio-logo-image" alt="" src="wp-content/uploads/2025/10/a_-_Copie__2_-removebg-preview.png"/>
+                                                <img decoding="async" class="position-relative wp-block-kubio-logo__alternateImage style-Lqg_9L63j8-alternateImage style-local-52-alternateImage kubio-logo-image kubio-alternate-logo-image" alt="" src="wp-content/uploads/2025/10/a_-_Copie__2_-removebg-preview.png"/>
+                                                <span class="position-relative wp-block-kubio-logo__text style-Lqg_9L63j8-text style-local-52-text"></span>
                                             </a>
-                                            <h5 class="wp-block wp-block-kubio-heading  position-relative wp-block-kubio-heading__text style-usX47IA2OZ-text style-local-64-text" data-kubio="kubio/heading">
+                                            <h5 class="wp-block wp-block-kubio-heading  position-relative wp-block-kubio-heading__text style-usX47IA2OZ-text style-local-53-text" data-kubio="kubio/heading">
                                                 <strong>Contactez-nous</strong>
                                             </h5>
-                                            <p class="wp-block wp-block-kubio-text  position-relative wp-block-kubio-text__text style-VMGmqWumt2-text style-local-65-text" data-kubio="kubio/text">
+                                            <p class="wp-block wp-block-kubio-text  position-relative wp-block-kubio-text__text style-VMGmqWumt2-text style-local-54-text" data-kubio="kubio/text">
                                                 <strong>E-mail</strong>
                                                 : global25.group@gmail.com
                                             </p>
-                                            <p class="wp-block wp-block-kubio-text  position-relative wp-block-kubio-text__text style-VMGmqWumt2-text style-local-66-text" data-kubio="kubio/text">
+                                            <p class="wp-block wp-block-kubio-text  position-relative wp-block-kubio-text__text style-VMGmqWumt2-text style-local-55-text" data-kubio="kubio/text">
                                                 <strong>Téléphone</strong>
                                                 : +242 06 148 57 60
                                             </p>
-                                            <p class="wp-block wp-block-kubio-text  position-relative wp-block-kubio-text__text style-VMGmqWumt2-text style-local-67-text" data-kubio="kubio/text">
+                                            <p class="wp-block wp-block-kubio-text  position-relative wp-block-kubio-text__text style-VMGmqWumt2-text style-local-56-text" data-kubio="kubio/text">
                                                 <strong>Adresse</strong>
-                                                : Ngoyo puma ex péage, Pointe-Noire,République du Congo.
+                                                : Ngoyo puma ex péage, Pointe-Noire, République du Congo
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-QYv_iY-Jvjd-container style-local-68-container d-flex h-col-lg-auto h-col-md-auto h-col-auto" data-kubio="kubio/column">
-                                    <div class="position-relative wp-block-kubio-column__inner style-QYv_iY-Jvjd-inner style-local-68-inner d-flex h-flex-basis h-px-lg-1 v-inner-lg-2 h-px-md-1 v-inner-md-2 h-px-1 v-inner-2">
+                                <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-QYv_iY-Jvjd-container style-local-57-container d-flex h-col-lg-auto h-col-md-auto h-col-auto" data-kubio="kubio/column">
+                                    <div class="position-relative wp-block-kubio-column__inner style-QYv_iY-Jvjd-inner style-local-57-inner d-flex h-flex-basis h-px-lg-1 v-inner-lg-2 h-px-md-1 v-inner-md-2 h-px-1 v-inner-2">
                                         <div class="background-wrapper">
                                             <div class="background-layer background-layer-media-container-lg"></div>
                                             <div class="background-layer background-layer-media-container-md"></div>
                                             <div class="background-layer background-layer-media-container"></div>
                                         </div>
-                                        <div class="position-relative wp-block-kubio-column__align style-QYv_iY-Jvjd-align style-local-68-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-center align-self-md-center align-self-center">
-                                            <div class="wp-block wp-block-kubio-accordion-menu  position-relative wp-block-kubio-accordion-menu__outer style-b824tY8zUn-outer style-local-69-outer kubio-accordion-menu h-ignore-global-body-typography" data-kubio="kubio/accordion-menu" data-kubio-component="accordion-menu" data-kubio-settings="[]">
-                                                <div class="wp-block wp-block-kubio-menu-items  position-relative wp-block-kubio-menu-items__outer style-xJUOqyUjCm-outer style-local-70-outer kubio-menu" data-kubio="kubio/menu-items">
+                                        <div class="position-relative wp-block-kubio-column__align style-QYv_iY-Jvjd-align style-local-57-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-end align-self-md-end align-self-end">
+                                            
+                                            <div class="wp-block wp-block-kubio-accordion-menu  position-relative wp-block-kubio-accordion-menu__outer style-b824tY8zUn-outer style-local-59-outer kubio-accordion-menu h-ignore-global-body-typography" data-kubio="kubio/accordion-menu" data-kubio-component="accordion-menu" data-kubio-settings="[]">
+                                                <div class="wp-block wp-block-kubio-menu-items  position-relative wp-block-kubio-menu-items__outer style-xJUOqyUjCm-outer style-local-60-outer kubio-menu" data-kubio="kubio/menu-items">
                                                     <ul id="menu-primary-menu-1" class="menu kubio-has-gap-fallback">
                                                         <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-11">
                                                             <a href="index.html" style=";--kubio-menu-item-depth:0;--kubio-menu-item-depth:0">Accueil</a>
                                                         </li>
                                                         <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item current_page_parent menu-item-12">
-                                                            <a href="blog.html" aria-current="page" style=";--kubio-menu-item-depth:0;--kubio-menu-item-depth:0">Actualité</a>
+                                                            <a href="?page_id=10" aria-current="page" style=";--kubio-menu-item-depth:0;--kubio-menu-item-depth:0">Actualité</a>
                                                         </li>
                                                         <li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41">
                                                             <a href="a_propos.html" style=";--kubio-menu-item-depth:0;--kubio-menu-item-depth:0">À propos</a>
@@ -2793,32 +3177,29 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <h5 class="wp-block wp-block-kubio-heading  position-relative wp-block-kubio-heading__text style-Odxtk0h0Km-text style-local-72-text" data-kubio="kubio/heading">Suivez-nous</h5>
-                                            <div class="wp-block wp-block-kubio-social-icons  position-relative wp-block-kubio-social-icons__outer style-PtVe9n_TCq-outer style-local-73-outer social-icons--container" data-kubio="kubio/social-icons">
-                                                <a class="wp-block wp-block-kubio-social-icon  position-relative wp-block-kubio-social-icon__link style-2eHpgnIJ_Q-link style-local-74-link social-icon-link" data-kubio="kubio/social-icon" href="https://www.facebook.com/874743025718597%20" aria-label="Social link: https://www.facebook.com/874743025718597 ">
-                                                    <span class="h-svg-icon wp-block-kubio-social-icon__icon style-2eHpgnIJ_Q-icon style-local-74-icon" name="font-awesome/facebook-square">
-                                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" id="facebook-square" viewBox="0 0 1536 1896.0833">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wp-block wp-block-kubio-column  position-relative wp-block-kubio-column__container style-5VyqOaJBu-container style-local-61-container d-flex h-col-lg-auto h-col-md-auto h-col-auto" data-kubio="kubio/column">
+                                    <div class="position-relative wp-block-kubio-column__inner style-5VyqOaJBu-inner style-local-61-inner d-flex h-flex-basis h-px-lg-1 v-inner-lg-2 h-px-md-1 v-inner-md-2 h-px-1 v-inner-2">
+                                        <div class="background-wrapper">
+                                            <div class="background-layer background-layer-media-container-lg"></div>
+                                            <div class="background-layer background-layer-media-container-md"></div>
+                                            <div class="background-layer background-layer-media-container"></div>
+                                        </div>
+                                        <div class="position-relative wp-block-kubio-column__align style-5VyqOaJBu-align style-local-61-align h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-center align-self-md-center align-self-center">
+                                            <h5 class="wp-block wp-block-kubio-heading  position-relative wp-block-kubio-heading__text style-ik0HlsSnU-text style-local-62-text" data-kubio="kubio/heading">Suivez-nous sur</h5>
+                                            <div class="wp-block wp-block-kubio-social-icons  position-relative wp-block-kubio-social-icons__outer style-H6aZFIts1q-outer style-local-63-outer social-icons--container" data-kubio="kubio/social-icons">
+                                                <a class="wp-block wp-block-kubio-social-icon  position-relative wp-block-kubio-social-icon__link style-uHeH1XDU5o-link style-local-64-link social-icon-link" data-kubio="kubio/social-icon" aria-label="Social link: ">
+                                                    <span class="h-svg-icon wp-block-kubio-social-icon__icon style-uHeH1XDU5o-icon style-local-64-icon" name="font-awesome/facebook-square">
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="facebook-square" viewBox="0 0 1536 1896.0833">
                                                             <path d="M1248 128q119 0 203.5 84.5T1536 416v960q0 119-84.5 203.5T1248 1664h-188v-595h199l30-232h-229V689q0-56 23.5-84t91.5-28l122-1V369q-63-9-178-9-136 0-217.5 80T820 666v171H620v232h200v595H288q-119 0-203.5-84.5T0 1376V416q0-119 84.5-203.5T288 128h960z"/>
                                                         </svg>
                                                     </span>
                                                 </a>
-                                                <a class="wp-block wp-block-kubio-social-icon  position-relative wp-block-kubio-social-icon__link style--VHhMfYDUb-link style-local-75-link social-icon-link" data-kubio="kubio/social-icon" aria-label="Social link: ">
-                                                    <span class="h-svg-icon wp-block-kubio-social-icon__icon style--VHhMfYDUb-icon style-local-75-icon" name="font-awesome/linkedin-square">
-                                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" id="linkedin-square" viewBox="0 0 1536 1896.0833">
-                                                            <path d="M237 1414h231V720H237v694zm246-908q-1-52-36-86t-93-34-94.5 34-36.5 86q0 51 35.5 85.5T351 626h1q59 0 95-34.5t36-85.5zm585 908h231v-398q0-154-73-233t-193-79q-136 0-209 117h2V720H595q3 66 0 694h231v-388q0-38 7-56 15-35 45-59.5t74-24.5q116 0 116 157v371zm468-998v960q0 119-84.5 203.5T1248 1664H288q-119 0-203.5-84.5T0 1376V416q0-119 84.5-203.5T288 128h960q119 0 203.5 84.5T1536 416z"/>
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                                <a class="wp-block wp-block-kubio-social-icon  position-relative wp-block-kubio-social-icon__link style-oMr6gDbzF6-link style-local-76-link social-icon-link" data-kubio="kubio/social-icon" aria-label="Social link: ">
-                                                    <span class="h-svg-icon wp-block-kubio-social-icon__icon style-oMr6gDbzF6-icon style-local-76-icon" name="font-awesome/youtube-square">
-                                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" id="youtube-square" viewBox="0 0 1536 1896.0833">
-                                                            <path d="M919 1303v-157q0-50-29-50-17 0-33 16v224q16 16 33 16 29 0 29-49zm184-122h66v-34q0-51-33-51t-33 51v34zM532 915v70h-80v423h-74V985h-78v-70h232zm201 126v367h-67v-40q-39 45-76 45-33 0-42-28-6-17-6-54v-290h66v270q0 24 1 26 1 15 15 15 20 0 42-31v-280h67zm252 111v146q0 52-7 73-12 42-53 42-35 0-68-41v36h-67V915h67v161q32-40 68-40 41 0 53 42 7 21 7 74zm251 129v9q0 29-2 43-3 22-15 40-27 40-80 40-52 0-81-38-21-27-21-86v-129q0-59 20-86 29-38 80-38t78 38q21 29 21 86v76h-133v65q0 51 34 51 24 0 30-26 0-1 .5-7t.5-16.5V1281h68zM785 457v156q0 51-32 51t-32-51V457q0-52 32-52t32 52zm533 713q0-177-19-260-10-44-43-73.5t-76-34.5q-136-15-412-15-275 0-411 15-44 5-76.5 34.5T238 910q-20 87-20 260 0 176 20 260 10 43 42.5 73t75.5 35q137 15 412 15t412-15q43-5 75.5-35t42.5-73q20-84 20-260zM563 519l90-296h-75l-51 195-53-195h-78q7 23 23 69l24 69q35 103 46 158v201h74V519zm289 81V470q0-58-21-87-29-38-78-38-51 0-78 38-21 29-21 87v130q0 58 21 87 27 38 78 38 49 0 78-38 21-27 21-87zm181 120h67V350h-67v283q-22 31-42 31-15 0-16-16-1-2-1-26V350h-67v293q0 37 6 55 11 27 43 27 36 0 77-45v40zm503-304v960q0 119-84.5 203.5T1248 1664H288q-119 0-203.5-84.5T0 1376V416q0-119 84.5-203.5T288 128h960q119 0 203.5 84.5T1536 416z"/>
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                                <a  class="wp-block wp-block-kubio-social-icon  position-relative wp-block-kubio-social-icon__link style-wr_yBQBAjZ-link style-local-78-link social-icon-link" data-kubio="kubio/social-icon" href="https://wa.me/242061485760?text=Bonjour%2C%20je%20suis%20un%20visiteur%20de%20votre%20site%20web%20Global%20Group.%20Je%20suis%20l%C3%A0%20pour%20un%20devis" aria-label="Social link:https://wa.me/242061485760?text=Bonjour%2C%20je%20suis%20un%20visiteur%20de%20votre%20site%20web%20Global%20Group.%20Je%20suis%20l%C3%A0%20pour%20un%20devis ">
-                                                    <span class="h-svg-icon wp-block-kubio-social-icon__icon style-wr_yBQBAjZ-icon style-local-77-icon" name="font-awesome/whatsapp">
-                                                        <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" id="whatsapp" viewBox="0 0 1536 1896.0833">
+                                                <a class="wp-block wp-block-kubio-social-icon  position-relative wp-block-kubio-social-icon__link style-EsJ9figSWs-link style-local-65-link social-icon-link" data-kubio="kubio/social-icon" href="https://wa.me/242061485760" aria-label="Social link: https://wa.me/242061485760">
+                                                    <span class="h-svg-icon wp-block-kubio-social-icon__icon style-EsJ9figSWs-icon style-local-65-icon" name="font-awesome/whatsapp">
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="whatsapp" viewBox="0 0 1536 1896.0833">
                                                             <path d="M985 974q13 0 97.5 44t89.5 53q2 5 2 15 0 33-17 76-16 39-71 65.5T984 1254q-57 0-190-62-98-45-170-118T476 889q-72-107-71-194v-8q3-91 74-158 24-22 52-22 6 0 18 1.5t19 1.5q19 0 26.5 6.5T610 544q8 20 33 88t25 75q0 21-34.5 57.5T599 811q0 7 5 15 34 73 102 137 56 53 151 101 12 7 22 7 15 0 54-48.5t52-48.5zm-203 530q127 0 243.5-50t200.5-134 134-200.5 50-243.5-50-243.5T1226 432t-200.5-134T782 248t-243.5 50T338 432 204 632.5 154 876q0 203 120 368l-79 233 242-77q158 104 345 104zm0-1382q153 0 292.5 60T1315 343t161 240.5 60 292.5-60 292.5-161 240.5-240.5 161-292.5 60q-195 0-365-94L0 1670l136-405Q28 1087 28 876q0-153 60-292.5T249 343t240.5-161T782 122z"/>
                                                         </svg>
                                                     </span>
@@ -2830,8 +3211,8 @@
                             </div>
                         </div>
                         <p style="text-align: center;">
-         © 2025 Global Group | Tous droit réservé
-        </p>
+         © 2025 Global Group | Développer par <a target="_blank" href="https://obiey-code.github.io/portefolio/" rel="noopener">OBIEY Christ Dany</a>
+</p>
                     </div>
                 </div>
             </div>
@@ -2842,6 +3223,35 @@
         <a href='#' class='yydev-back-to-top'>
             <span></span>
         </a>
+        <script type="text/javascript" src="wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
+        <script type="text/javascript" id="admin-bar-js-before">
+            /* <![CDATA[ */
+            (function() {
+                function wpforms_admin_bar_menu_init() {
+                    var template = document.getElementById('tmpl-wpforms-admin-menubar-data')
+                      , notifications = document.getElementById('wp-admin-bar-wpforms-notifications');
+
+                    if (!template) {
+                        return;
+                    }
+
+                    if (!notifications) {
+                        var menu = document.getElementById('wp-admin-bar-wpforms-menu-default');
+
+                        if (!menu) {
+                            return;
+                        }
+
+                        menu.insertAdjacentHTML('afterBegin', template.innerHTML);
+                    } else {
+                        notifications.insertAdjacentHTML('afterend', template.innerHTML);
+                    }
+                }
+                ;document.addEventListener('DOMContentLoaded', wpforms_admin_bar_menu_init);
+            }());
+            /* ]]> */
+        </script>
+        <script type="text/javascript" src="wp-includes/js/admin-bar.min.js?ver=6.8.3" id="admin-bar-js"></script>
         <script type="text/javascript" src="wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
         <script type="text/javascript" src="wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
         <script type="text/javascript" src="wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b" id="jquery-masonry-js"></script>
