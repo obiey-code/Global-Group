@@ -24,7 +24,7 @@ supprime la balise div qui contient © 2025 Global Group la deuxieme balise du c
 
 a la cinquieme balise div a partir de la derniere balise div du code ajoute :
 <p style="text-align: center;">
-         © 2025 Global Group | Développer par <a target="_blank" href="https://obiey-code.github.io/portefolio/" rel="noopener">OBIEY Christ Dany</a>
+         © 2025 Global Group . Tous droit reservé
 </p>
 
 dans les articles recherche
@@ -70,5 +70,7 @@ supprimer le bloc du texte et ajuster
 Découvrez nos dernières analyses, conseils et informations sur la construction, le bâtiment et le génie civil.
 
 
-
+Formulaire contact
+rechercher <form ou 
+<div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-32">
 
