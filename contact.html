@@ -3034,6 +3034,97 @@
             }
             /* ]]> */
         </script>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sélection des éléments DOM par leur ID
+        const form = document.getElementById('contact-form');
+        const progressBar = document.getElementById('progress-bar');
+        const formStatus = document.getElementById('form-status');
+        const submitButton = document.getElementById('submit-button');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // 🛑 Empêche la soumission native (et la redirection)
+            
+            const url = form.action;
+            const data = new FormData(form);
+            
+            // --- 1. Préparation de l'interface utilisateur ---
+            progressBar.style.display = 'block'; // Affiche la barre
+            progressBar.value = 0; 
+            formStatus.textContent = 'Envoi en cours...';
+            formStatus.style.color = 'blue';
+            submitButton.disabled = true; // Désactive le bouton pour éviter les doubles clics
+
+            // --- 2. Configuration de la requête AJAX ---
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            
+            // 🔑 Demande une réponse JSON, essentielle pour Formspree pour éviter la redirection
+            xhr.setRequestHeader('Accept', 'application/json');
+
+            // 📊 Gère la progression de l'upload des données
+            xhr.upload.onprogress = function(event) {
+                if (event.lengthComputable) {
+                    const percentComplete = (event.loaded / event.total) * 100;
+                    progressBar.value = percentComplete;
+                }
+            };
+            
+            // --- 3. Gestion de la réponse ---
+            xhr.onload = function() {
+                progressBar.style.display = 'none'; // Cache la barre
+                submitButton.disabled = false; // Réactive le bouton
+                
+                if (xhr.status === 200) {
+                    // ✅ Succès
+                    formStatus.textContent = '✅ Merci ! Votre message a été envoyé avec succès.';
+                    formStatus.style.color = 'green';
+                    form.reset(); // Vider le formulaire
+                } else {
+                    // ❌ Erreur
+                    let message = "Erreur inconnue lors de l'envoi.";
+                    try {
+                        const errorData = JSON.parse(xhr.responseText);
+                        message = errorData.error || errorData.errors?.map(err => err.message).join('; ') || message;
+                        if (xhr.status === 422) {
+                            message = "Veuillez vérifier les champs manquants ou invalides.";
+                        }
+                    } catch (e) {
+                        message = `Une erreur est survenue lors de l'envoi. Code de statut : ${xhr.status}.`;
+                    }
+                    
+                    formStatus.textContent = `❌ Erreur: ${message}`;
+                    formStatus.style.color = 'red';
+                }
+            };
+
+            // ⚠️ Gestion des erreurs réseau
+            xhr.onerror = function() {
+                progressBar.style.display = 'none';
+                submitButton.disabled = false;
+                formStatus.textContent = '🚨 Erreur réseau. Veuillez vérifier votre connexion.';
+                formStatus.style.color = 'red';
+            };
+
+            // --- 4. Envoi de la requête ---
+            xhr.send(data);
+        });
+    });
+</script>
+        
+
+
+
+
+
+
+
+
+
+
+
         <style>
             a.yydev-back-to-top {
                 background: #09547c url(wp-content/plugins/back-to-the-top-button/images/back-to-top.png) no-repeat;
