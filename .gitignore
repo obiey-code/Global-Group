@@ -1,0 +1,71 @@
+# -----------------------------------------------------------------------
+# 1. Dépendances & Dossiers de Build (Node/Vite/React)
+# -----------------------------------------------------------------------
+
+# Dépendances Node.js (GÉNÉRAL)
+/node_modules
+# Dossiers de sortie du build (Vite/Bundler)
+/dist
+/build
+/out
+
+# Fichiers de cache et de log npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn-cache
+.pnpm-store
+.vite/
+*.tsbuildinfo
+
+# -----------------------------------------------------------------------
+# 2. Fichiers spécifiques à l'environnement/IDE
+# -----------------------------------------------------------------------
+
+# Environnements Virtuels Python (Trouvé: venv/)
+/venv
+*.pyc
+
+# IDEs (VS Code, IntelliJ/WebStorm/etc.)
+.idea/
+.vscode/*
+# Vous pouvez garder les fichiers de configuration de VS Code si vous le souhaitez:
+# !.vscode/settings.json
+# !.vscode/tasks.json
+
+# Fichiers de cache OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichiers d'autres outils (Bolt)
+/.bolt/
+
+# -----------------------------------------------------------------------
+# 3. Fichiers sensibles et logs
+# -----------------------------------------------------------------------
+
+# Variables d'environnement (TRÈS IMPORTANT !)
+.env
+.env.local
+.env.*.local
+*.log
+
+# -----------------------------------------------------------------------
+# 4. Fichiers CMS (WordPress)
+# -----------------------------------------------------------------------
+
+# Le code source de WordPress ne doit pas être suivi
+/wp-content/
+/wp-includes/
+# Garder les fichiers suivants si vous comptez synchroniser les thèmes/plugins manuellement
+!/wp-content/themes/
+!/wp-content/plugins/
+
+# Fichiers de configuration ou de données
+*.bak
+*.orig
+# Fichiers de couverture de test (si vous en utilisez)
+/coverage
