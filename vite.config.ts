@@ -1,21 +1,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Le nom de votre dépôt est 'Global-Group'
-// CLÉ CRITIQUE pour GitHub Pages
+// Le nom de votre dépôt est utilisé pour définir le chemin de base (base path)
 const REPO_NAME = 'Global-Group'; 
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // ----------------------------------------------------
-  // CORRECTION IMPORTANTE POUR GITHUB PAGES
-  // Vite doit savoir où se trouve le dossier du projet sur le domaine (https://obiey-code.github.io/Global-Group/)
+  // CLÉ CRITIQUE : Définit le chemin de base pour les ressources.
+  // Cela garantit que toutes les ressources (JS, CSS) sont chargées correctement depuis :
+  // https://obiey-code.github.io/Global-Group/
   base: `/${REPO_NAME}/`, 
-  // ----------------------------------------------------
   
   plugins: [react()],
   
-  // Si vous utilisez TypeScript pour votre projet
   build: {
     outDir: 'dist',
     sourcemap: true,
